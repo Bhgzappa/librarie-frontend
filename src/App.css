@@ -1,38 +1,52 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.authors-card, .genre-card, .year-card{
+  height: 150px;
+  width: 300px;
+  border-radius: 50px;
+  margin: 10px;
+  box-shadow: 0 6px 7px 3px gray;
+font-style: italic;
+}
+.authors-card{
+  background-color: yellow;
+}
+.genre-card{
+  background-color: brown;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.year-card{
+  background-color: green;
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.year-card{
+  background-color: red;
+  color:white
+}
+.title{
+  border-bottom: 2px solid black;
+}
+select{
+  height: 40px;
+  border: none;
+  margin: 30px;
+  padding: 7px 10px;
+  border-bottom: 1px solid gray;
+  font-size: 20px;
+}
+header{
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: steelblue;
+}
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
